@@ -18,10 +18,9 @@ def exit(data):
 
 
 def writeFile(data):
-    new = input('Введите данные ').split()
-    with open('tel.txt', 'a', encoding='utf-8') as f:
-        f.writelines("%s\n" % line for line in new)
-        f.writelines("\n")
+    newLine = input('Введите новую строку ')
+    with io.open("tel.txt", mode='a', encoding='utf-8') as f:
+        f.write(f'\n{newLine}\n')
 
 
 def findData(data):
