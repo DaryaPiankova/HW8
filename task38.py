@@ -21,6 +21,7 @@ def writeFile(data):
     new = input('Введите данные ').split()
     with open('tel.txt', 'a', encoding='utf-8') as f:
         f.writelines("%s\n" % line for line in new)
+        f.writelines("\n")
 
 
 def findData(data):
